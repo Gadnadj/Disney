@@ -4,6 +4,10 @@ A modern web application replicating the functionality and design of **Disney+**
 
 ---
 
+## 🖼️ **Screenshot**
+
+![Home Page](src/assets/Images/HomePage.png)
+
 ## 🌐 **Live Demo**  
 Check out the live version of the project here: [Disney Live Demo](https://disney-stars.netlify.app/)
 
