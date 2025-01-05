@@ -1,6 +1,6 @@
 import { Genre } from '../types';
 
-const genere: Genre[] = [
+const genre: Genre[] = [
     {
         'id': 28,
         'name': 'Action'
@@ -80,5 +80,5 @@ const genere: Genre[] = [
 ];
 
 export default {
-    genere
+    genre
 };
