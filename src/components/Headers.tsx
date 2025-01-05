@@ -3,9 +3,12 @@ import { HiHome, HiMagnifyingGlass, HiStar, HiPlayCircle, HiTv, HiPlus } from 'r
 import { MenuItem } from '../types';
 import HeaderItems from './HeaderItems';
 import { HiDotsVertical } from 'react-icons/hi';
+import { useState } from 'react';
 type Props = {}
 
 const Headers = () => {
+
+    const [toggle, setToggle] = useState<boolean>(false);
 
     const menu: MenuItem[] = [
         {
@@ -36,22 +39,30 @@ const Headers = () => {
 
 
     return (
-        <div className='flex flex-row gap-8 items-center justify-between p-5'>
+        <div className='flex items-center justify-between p-5'>
             <div className='flex gap-8 items-center'>
-                <img src={Logo} alt="logo" className='w-[90px] md:w-[115px] object-cover' />
+                <img src={Logo} alt="logo" className='w-[80px] md:w-[115px] object-cover' />
                 <div className='hidden md:flex md:gap-8'>
-                    {menu.map((item: MenuItem) => (
-                        <HeaderItems name={item.name} Icon={item.icon} />
+                    {menu.map((item: MenuItem, index: number) => (
+                        <HeaderItems key={index} name={item.name} Icon={item.icon} />
                     ))}
                 </div>
 
                 {/* Mobile Render */}
                 <div className='flex md:hidden gap-5'>
                     {menu.map((item, index) => index < 3 && (
-                        <HeaderItems name={''} Icon={item.icon} />
+                        <HeaderItems key={index} name={''} Icon={item.icon} />
                     ))}
-                    <div className='flex gap-8'>
+                    <div className='md:hidden' onClick={() => setToggle(!toggle)}>
                         <HeaderItems name={''} Icon={HiDotsVertical} />
+
+                        {toggle ?
+                            <div className='absolute mt-3 bg-[#121212] border-[1px] border-gray-700 p-3 px-5 py-4'>
+                                {menu.map((item, index) => index > 2 && (
+                                    <HeaderItems key={index} name={item.name} Icon={item.icon} />
+                                ))}
+                            </div> : null}
+
                     </div>
                 </div>
             </div>
