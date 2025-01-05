@@ -3,7 +3,6 @@ import GlobalApi from '../Services/GlobalApi';
 import { Movie } from '../types';
 import MovieCard from './MovieCard';
 import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5';
-import HrMovieCard from './HrMovieCard';
 
 type Props = {
     genreId: number;
