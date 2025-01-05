@@ -1,13 +1,13 @@
 import './App.css';
+import Headers from './components/Headers';
 
 function App() {
 
 
   return (
-    <>
-
-
-    </>
+    <div>
+      <Headers />
+    </div>
   );
 }
 
