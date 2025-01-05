@@ -1,6 +1,12 @@
 export interface MenuItem {
     name: string;
     icon: React.ElementType;
+};
+
+export interface productionHouseListItem {
+    id: number;
+    image: React.ElementType;
+    video: React.ElementType;
 }
 
 export type Movie = {
