@@ -10,12 +10,14 @@ type Props = {
 
 const HrMovieCard = ({ movie }: Props) => {
     return (
-        <>
-            <img src={IMAGE_BASE_URL + movie.poster_path} alt=""
-                className='w-[110px] md:w-[200px] rounded-lg hover:border-[3px] border-gray-400 cursor-pointer
-                hover:scale-110 transition-all duration-150 ease-in '
-            />
-        </>
+        <section className='hover:scale-110 transition-all duration-150 ease-in'>
+            <img src={IMAGE_BASE_URL + movie.backdrop_path}
+                className='w-[110px] md:w-[260px] rounded-lg
+        hover:border-[3px] border-gray-400 cursor-pointer shadow-lg shadow-black
+        '/>
+            <h2 className='w-[110px] md:w-[260px] text-white
+        mt-2 font-bold'>{movie.title}</h2>
+        </section>
     );
 };
 

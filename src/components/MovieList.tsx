@@ -39,19 +39,21 @@ const MovieList = ({ genreId, index_ }: Props) => {
     return (
         <div className='relative'>
             <IoChevronBackOutline onClick={() => elementRef.current && sliderLeft(elementRef.current)}
-                className='text-[50px] text-white p-2 z-10 cursor-pointer hidden md:block absolute mt-[138px]'
-            />
+                className={`text-[50px] text-white p-2 z-10 cursor-pointer 
+                hidden md:block absolute
+                ${index_ % 3 === 0 ? 'mt-[80px]' : 'mt-[150px]'} `} />
 
-            <div ref={elementRef} className='flex overflow-x-auto gap-5 md:gap-8 scrollbar-none scroll-smooth pt-4 px-3 pb-4'>
-                {movieList.map((item, index) => (
+            <div ref={elementRef} className='flex overflow-x-auto gap-8 scrollbar-none scroll-smooth pt-4 px-3 pb-4'>
+                {movieList.map((item) => (
                     <>
-                        {index_ % 3 === 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} key={index} />}
+                        {index_ % 3 === 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} />}
                     </>
                 ))}
             </div>
             <IoChevronForwardOutline onClick={() => elementRef.current && sliderRight(elementRef.current)}
-                className='text-[50px] text-white hidden md:block p-2 cursor-pointer z-10 top-0 absolute right-0 mt-[138px]'
-            />
+                className={`text-[50px] text-white hidden md:block p-2 cursor-pointer z-10 top-0
+                absolute right-0 
+                ${index_ % 3 === 0 ? 'mt-[80px]' : 'mt-[150px]'}`} />
         </div>
     );
 };

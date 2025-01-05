@@ -25,6 +25,7 @@ export type Movie = {
     poster_path: string;
     vote_average: number;
     vote_count: number;
+    title: string;
 };
 
 export interface Genre {
