@@ -5,9 +5,8 @@ const screenWidth = window.innerWidth;
 import { Movie } from '../types';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi2';
 
-type Props = {}
 
-const Slider = (props: Props) => {
+const Slider = () => {
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const elementRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
