@@ -32,9 +32,8 @@ A modern web application replicating the functionality and design of **Disney+**
    git clone https://github.com/yourusername/disney-plus-clone.git
 Navigate to the project directory:
 
-bash
-Copier le code
-cd disney-plus-clone
+```bash
+   cd disney-plus-clone
 Install dependencies:
 
 bash
