@@ -31,3 +31,5 @@ A modern web application replicating the functionality and design of **Disney+**
    ```bash
    git clone https://github.com/yourusername/disney-plus-clone.git
 Navigate to the project directory:
+
+Navigate to the project directory:
