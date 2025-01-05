@@ -4,6 +4,10 @@ A modern web application replicating the functionality and design of **Disney+**
 
 ---
 
+## 🌐 **Live Demo**  
+Check out the live version of the project here: [Disney+ Clone Live Demo](https://disney-stars.netlify.app/)
+
+
 ## 🚀 **Features**
 
 - 🎥 **Trending Movies/Series**: Display trending videos fetched from the TMDB API.
