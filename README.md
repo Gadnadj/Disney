@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+https://disney-stars.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Disney+ Clone
+A modern web application replicating the functionality and design of Disney+, built with React, TypeScript, Vite, and Tailwind CSS. It integrates TMDB API to fetch and display movies and series.
 
-Currently, two official plugins are available:
+Features
+🎥 Trending Movies/Series: Display trending videos using TMDB API.
+🔍 Genre Filtering: Browse movies/series by genre.
+🖼️ Responsive Design: Optimized for all devices.
+🖱️ Interactive UI: Hover effects, smooth scrolling, and animations.
+📽️ Production House Showcase: Interactive production house logos with video previews.
+Tech Stack
+Frontend: React, TypeScript, Vite, Tailwind CSS.
+API: The Movie Database (TMDB) API.
+Icons: React Icons.
+Installation
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copier le code
+git clone https://github.com/yourusername/disney-plus-clone.git
 
-## Expanding the ESLint configuration
+Navigate to the project directory:
+cd disney-plus-clone
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Install dependencies:
+npm install
 
-- Configure the top-level `parserOptions` property like this:
+Create a .env file in the root directory and add your TMDB API key:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+VITE_MOVIES_BASE_URL=https://api.themoviedb.org/3
+VITE_TMDB_API_KEY=your_api_key_here
+VITE_MOVIE_BY_GENRE_BASE_URL=https://api.themoviedb.org/3/discover/movie
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Start the development server:
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Open your browser and navigate to:
+http://localhost:5173
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+API Integration
+Fetch trending movies/series.
+Filter movies by genres.
+Video previews for production houses.
+
+npm run dev: Start the development server.
+npm run build: Build the project for production.
+npm run preview: Preview the production build.
+
+
