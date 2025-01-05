@@ -12,11 +12,13 @@ import marvelV from '../assets/Videos/marvel.mp4';
 import nationalGeographicV from '../assets/Videos/national-geographic.mp4';
 import pixarV from '../assets/Videos/pixar.mp4';
 
+import { productionHouseListItem } from '../types';
+
 type Props = {}
 
 const ProductionHouse = (props: Props) => {
 
-    const productionHouseList = [
+    const productionHouseList: productionHouseListItem[] = [
         {
             id: 1,
             image: disney,

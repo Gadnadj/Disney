@@ -5,8 +5,8 @@ export interface MenuItem {
 
 export interface productionHouseListItem {
     id: number;
-    image: React.ElementType;
-    video: React.ElementType;
+    image: string;
+    video: string;
 }
 
 export type Movie = {
