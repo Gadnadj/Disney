@@ -29,11 +29,11 @@ A modern web application replicating the functionality and design of **Disney+**
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/disney-plus-clone.git
+   git clone https://github.com/yourusername/Disney.git
 4. Navigate to the project directory:
 
    ```bash
-   cd disney-plus-clone
+   cd Disney
 
 5. Install dependencies:
 
