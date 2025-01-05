@@ -45,7 +45,7 @@ const MovieList = ({ genreId, index_ }: Props) => {
             <div ref={elementRef} className='flex overflow-x-auto gap-5 md:gap-8 scrollbar-none scroll-smooth pt-4 px-3 pb-4'>
                 {movieList.map((item, index) => (
                     <>
-                        {index_ % 3 === 0 ? <HrMovieCard /> : <MovieCard movie={item} key={index} />}
+                        {index_ % 3 === 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} key={index} />}
                     </>
                 ))}
             </div>
