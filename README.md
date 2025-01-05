@@ -30,6 +30,40 @@ A modern web application replicating the functionality and design of **Disney+**
 
    ```bash
    git clone https://github.com/yourusername/disney-plus-clone.git
-Navigate to the project directory:
+4. Navigate to the project directory:
 
-Navigate to the project directory:
+   ```bash
+   cd disney-plus-clone
+
+5. Install dependencies:
+
+   ```bash
+   npm install
+
+6. Create a `.env` file in the root directory and add your TMDB API key:
+
+   ```bash
+   VITE_MOVIES_BASE_URL=https://api.themoviedb.org/3
+   VITE_TMDB_API_KEY=your_api_key_here
+   VITE_MOVIE_BY_GENRE_BASE_URL=https://api.themoviedb.org/3/discover/movie
+
+7. Start the development server:
+
+   ```bash
+   npm run dev
+
+8. Open your browser and navigate to:
+
+   ```bash
+   http://localhost:5173
+
+🧑‍💻 API Integration
+Fetch trending movies/series.
+Filter movies by genres.
+Showcase video previews for production houses.
+📦 Available Scripts
+In the project directory, you can run:
+
+npm run dev: Start the development server.
+npm run build: Build the project for production.
+npm run preview: Preview the production build.
