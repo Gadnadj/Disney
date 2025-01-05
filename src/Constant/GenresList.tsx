@@ -1,4 +1,6 @@
-const genere = [
+import { Genre } from '../types';
+
+const genere: Genre[] = [
     {
         'id': 28,
         'name': 'Action'
