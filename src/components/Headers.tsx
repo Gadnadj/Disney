@@ -1,10 +1,12 @@
-import React from 'react';
+import Logo from '../assets/Images/logo.png';
 
 type Props = {}
 
 const Headers = () => {
     return (
-        <div>Headers</div>
+        <div>
+            <img src={Logo} alt="logo" className='w-[80px] object-cover' />
+        </div>
     );
 };
 
