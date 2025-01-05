@@ -2,9 +2,7 @@ import GenresList from '../Constant/GenresList';
 import MovieList from './MovieList';
 
 
-type Props = {}
-
-const GenreMoviesList = (props: Props) => {
+const GenreMoviesList = () => {
     return (
         <div>
             {GenresList.genre.map((item, index) => (

@@ -4,7 +4,6 @@ import { MenuItem } from '../types';
 import HeaderItems from './HeaderItems';
 import { HiDotsVertical } from 'react-icons/hi';
 import { useState } from 'react';
-type Props = {}
 
 const Headers = () => {
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import GlobalApi from '../Services/GlobalApi';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original';
 const screenWidth = window.innerWidth;
