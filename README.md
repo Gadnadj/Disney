@@ -1,4 +1,4 @@
-# 🌟 [Disney+ Clone](https://disney-stars.netlify.app/)
+# 🌟 [Disney Clone](https://disney-stars.netlify.app/)
 
 A modern web application replicating the functionality and design of **Disney+**, built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. The project leverages **TMDB API** to fetch and display movies and series seamlessly.  
 
@@ -37,7 +37,7 @@ Check out the live version of the project here: [Disney Live Demo](https://disne
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/Disney.git
+   git clone https://github.com/gadnadj/Disney.git
 4. Navigate to the project directory:
 
    ```bash
